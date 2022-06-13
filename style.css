@@ -1,0 +1,87 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*
+    fixed=parallax
+    scroll=normal  */
+    
+}
+
+.pimg1{
+    background-image: url('../image/1.jpg.jpg');
+    height: 400px;
+}
+.pimg2{
+    background-image: url('../image/build.jpg.jpg');
+    height: 400px;
+}
+.pimg3{
+    background-image: url('../image/3.jpg.jpg');
+    height: 400px;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #008CBA
+  }
+.section{
+    text-align: center;
+    padding: 70px 90px;
+}
+.section-light{
+    background-color: #7466f3;
+    color: #fff
+}
+.section-dark{
+    background-color: #4662bb;
+    color: #ddd;
+}
+.ptext{
+    position: absolute;
+     top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border{
+    background-color: rgb(236, 128, 39);
+    color: #fff;
+    padding: 20px;
+}
+.ptext .border.trans{
+    background-color:rgb(230, 181, 21);
+    text-decoration-color: rgb(65, 24, 248);
+}
+.ptext .border.trans1{
+    background-color:rgb(118, 197, 27);
+    text-decoration-color: rgb(255, 255, 255);
+}
+@media (max-width:568px)  {
+    .pimg1, .pimg2,.pimg3{
+        background-attachment:scroll ;
+    }
+}
+
